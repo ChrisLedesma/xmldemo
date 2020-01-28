@@ -1,10 +1,10 @@
 <?php 
     $conn = mysqli_connect("dbrojasdev.cjw42bnplsor.us-east-1.rds.amazonaws.com", "admin", "root1234") or die (mysqli_error($conn));
     $db = mysqli_select_db($conn, "db_1820521");
-
     if(mysqli_connect_errno($conn)){
         echo "Database connection failed!: ". mysqli_connect_errno();
     }
+
     $sql = "SELECT * FROM tbl_pet ORDER BY pet_id DESC LIMIT 20";
     $q = mysqli_query($conn, $sql);
 
