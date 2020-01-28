@@ -1,5 +1,5 @@
 <?php 
-    $conn = mysqli_connect("localhost", "root", "") or die (mysqli_error($conn));
+    $conn = mysqli_connect("http://dbrojasdev.cjw42bnplsor.us-east-1.rds.amazonaws.com/", "admin", "root1234") or die (mysqli_error($conn));
     $db = mysqli_select_db($conn, "db_1820521");
 
     if(mysqli_connect_errno($conn)){
